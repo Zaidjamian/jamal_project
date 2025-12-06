@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Banner Section */
+.banner-section {
+  position: relative;
+}
+
+.banner-slide {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-slide .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.banner-slide .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Service and Project Sections */
+
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.service-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-body {
+  padding: 20px;
+}
+
+.service-body h5 {
+  font-size: 19px;
+}
+
+.service-body p {
+  color: #555;
+  font-size: 15px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+/* Project Done  */
+
+/* Modern Project Section */
+.project-section {
+  background: #f7f9fc;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-content h6 {
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-card {
+  transition: 0.3s;
+  border-left: 5px solid #0d6efd;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Service and Project Boxes */
+.service-box:hover,
+.project-box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.call-floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  color: #fff;
+  padding: 15px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  z-index: 999;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.call-floating-btn:hover {
+  transform: scale(1.1);
+  background: #1e7e34;
+}
+.call-top-bar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #ff3b30;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 600;
+  z-index: 999;
+}
+.call-top-bar a {
+  color: #fff;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.brand-section h2 {
+  font-weight: 700;
+}
+
+.brand-card {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.brand-img {
+  max-height: 55px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.brand-card:hover .brand-img {
+  filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-slide {
+    height: 60vh;
+  }
+  .display-4 {
+    font-size: calc(1.475rem + 0.7vw) !important;
+  }
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+}
