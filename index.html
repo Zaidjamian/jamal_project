@@ -26,13 +26,13 @@
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="img/logo.png" alt="logo" width="150" />
         </a>
 
         <!-- Mobile Toggle Button -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler my-togller"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -40,7 +40,12 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
         </button>
 
         <!-- Nav Items -->
@@ -177,7 +182,7 @@
             <!-- Vision -->
             <div class="d-flex align-items-start mt-4">
               <div class="icon-circle me-3">
-                <i class="bi bi-graph-up-arrow fs-3 text-primary"></i>
+                <i class="fa fa-arrow-trend-up fs-3 text-primary"></i>
               </div>
               <div>
                 <h5 class="fw-bold">Our Vision</h5>
@@ -481,10 +486,14 @@
       </div>
     </section>
     <div class="call-top-bar">
-      <span
-        ><i class="fa fa-phone pe-2"></i> Need Quick Repair? Call Now:
-      </span>
-      <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+      <p class="mb-2">
+        <span
+          ><i class="fa fa-phone pe-2"></i> Need Quick Repair? 
+        </span>
+      </p>
+      <p class="m-0">
+        Call Now: <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+      </p>
     </div>
 
     <!-- JS Files -->
